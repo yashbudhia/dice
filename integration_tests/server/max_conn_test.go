@@ -19,7 +19,7 @@ func getConnection(port int) (net.Conn, error) {
 	if err != nil {
 		return nil, err
 	}
-	return conn, 
+	return conn, nil
 }
 
 func TestMaxConnection(t *testing.T) {
